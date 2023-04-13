@@ -1,0 +1,5 @@
+.bottonTags{
+    display: flex;
+    gap: 20px;
+    width: 10px;
+}

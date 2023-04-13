@@ -6,7 +6,7 @@ function JobListing() {
   const jobs = datas.map((data) => (
     <div className="JobListing" key={data.id}>
       <div className="topJL">
-        {/* <img src={data.logo} alt={data.company} /> */}
+        <img src={data.logo} alt={data.company} />
       </div>
       <div className="middleJL">
         <div className="mTopSection">

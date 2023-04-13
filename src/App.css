@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
+body {
+	line-height: 1;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+ol, ul {
+	list-style: none;
 }
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap');
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+:root{
+
+--DesaturatedDarkCyan:hsl(180, 29%, 50%);
+--LightGrayishCyan:hsl(180, 52%, 96%); /*Background*/
+--LightGrayishCyanFilterTablets: hsl(180, 31%, 95%); /*(Filter Tablets)*/
+--DarkGrayishCyan: hsl(180, 8%, 52%);
+--VeryDarkGrayishCyan: hsl(180, 14%, 20%);
+--TextSize: 15px;
+}
+body{
+  font-family: 'League Spartan', sans-serif;
+}
+.topApp{
+  background-image: url('./assets/bg-header-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--DesaturatedDarkCyan);
+  height: 20dvh;
+  width: 100dvw;
+}
+.bottonApp{
+  background-color: var(--LightGrayishCyan);
+  width: 100dvw;
+  height: 80dvh;
 }
