@@ -1,5 +1,77 @@
+.JobListing{
+    background-color: white;
+    width: 90dvw;
+    margin: 20px 0 10px 0;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.44);
+}
+.jobListingContainer{
+    margin: 0 20px ;
+}
+.topJL img{
+    width: 50px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+.titleJL h3, .bottonTags {
+    color: var(--DesaturatedDarkCyan);
+}
+.titleJL h3{ 
+    font-weight: 700;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.mTopSection{
+    display: flex; 
+    gap: 15px
+}
+.newJL span, .featuredJL span{
+     color: white;
+     border-radius: 12px;
+     padding: 4px 8px 1px; 
+}
+.newJL span{
+    background-color: var(--DesaturatedDarkCyan); 
+}
+.featuredJL span{
+    background-color: var(--VeryDarkGrayishCyan);
+}
+.mMidSection h2{
+    cursor: pointer;
+    font-weight: 700;
+}
+.mMidSection h2:hover{
+    color: var(--DesaturatedDarkCyan);
+}
+.mBottonSection{
+    display: flex;
+    gap: 15px;
+    color: rgba(0, 0, 0, 0.507);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.324);
+}
+.mMidSection{
+    margin: 10px 0;
+}
 .bottonTags{
     display: flex;
-    gap: 20px;
-    width: 10px;
+    flex-wrap: wrap;
+    cursor: pointer;
+  
+}
+.tags p{
+    background-color: var(--LightGrayishCyan);
+    width: min-content;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 5px 15px 10px 0;
+
+}
+.tags p:hover{
+    color: white;
+    background-color: var(--DesaturatedDarkCyan);
 }
