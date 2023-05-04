@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Job-Listing-app-REACT.js/static/css/main.40c08dc2.css",
-    "main.js": "/Job-Listing-app-REACT.js/static/js/main.d99c6f47.js",
+    "main.css": "/Job-Listing-app-REACT.js/static/css/main.c736ef16.css",
+    "main.js": "/Job-Listing-app-REACT.js/static/js/main.972e2234.js",
     "static/js/787.4588593c.chunk.js": "/Job-Listing-app-REACT.js/static/js/787.4588593c.chunk.js",
     "index.html": "/Job-Listing-app-REACT.js/index.html",
     "static/media/bg-header-mobile.svg": "/Job-Listing-app-REACT.js/static/media/bg-header-mobile.b7750a0c3e0c016763b9.svg",
-    "main.40c08dc2.css.map": "/Job-Listing-app-REACT.js/static/css/main.40c08dc2.css.map",
-    "main.d99c6f47.js.map": "/Job-Listing-app-REACT.js/static/js/main.d99c6f47.js.map",
+    "main.c736ef16.css.map": "/Job-Listing-app-REACT.js/static/css/main.c736ef16.css.map",
+    "main.972e2234.js.map": "/Job-Listing-app-REACT.js/static/js/main.972e2234.js.map",
     "787.4588593c.chunk.js.map": "/Job-Listing-app-REACT.js/static/js/787.4588593c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40c08dc2.css",
-    "static/js/main.d99c6f47.js"
+    "static/css/main.c736ef16.css",
+    "static/js/main.972e2234.js"
   ]
 }
