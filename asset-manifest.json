@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Job-Listing-app-REACT.js/static/css/main.c736ef16.css",
+    "main.css": "/Job-Listing-app-REACT.js/static/css/main.47257fcf.css",
     "main.js": "/Job-Listing-app-REACT.js/static/js/main.972e2234.js",
     "static/js/787.4588593c.chunk.js": "/Job-Listing-app-REACT.js/static/js/787.4588593c.chunk.js",
     "index.html": "/Job-Listing-app-REACT.js/index.html",
     "static/media/bg-header-mobile.svg": "/Job-Listing-app-REACT.js/static/media/bg-header-mobile.b7750a0c3e0c016763b9.svg",
-    "main.c736ef16.css.map": "/Job-Listing-app-REACT.js/static/css/main.c736ef16.css.map",
+    "main.47257fcf.css.map": "/Job-Listing-app-REACT.js/static/css/main.47257fcf.css.map",
     "main.972e2234.js.map": "/Job-Listing-app-REACT.js/static/js/main.972e2234.js.map",
     "787.4588593c.chunk.js.map": "/Job-Listing-app-REACT.js/static/js/787.4588593c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c736ef16.css",
+    "static/css/main.47257fcf.css",
     "static/js/main.972e2234.js"
   ]
 }
