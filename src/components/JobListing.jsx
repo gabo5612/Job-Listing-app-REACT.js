@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../Style/JobListing.css";
 import datas from "../data.json";
+import { SearchBar } from "./SearchBar";
 
 function JobListing() {
-  const jobs = datas.map((data) => (
-    <div className="JobListing" key={data.id}>
+  const [searchData, setSearchData] = useState([]);
+  const [filteredData, setFilteredData] = useState(datas);
+
+  const handleClick = (tag) => {
+    if (!searchData.includes(tag)) {
+      setSearchData([...searchData, tag]);
+    }
+  };
+  useEffect(() => {
+
+    const filteredJobs = datas.filter((job) => {
+      const tags = [
+        job.role,
+        job.level,
+        ...job.languages,
+        ...job.tools,
+      ].map((tag) => tag.toLowerCase());
+      return searchData.every((tag) => tags.includes(tag.toLowerCase()));
+    });
+    setFilteredData(filteredJobs);
+  }, [searchData]);
+
+  const jobs = filteredData.map((data) => (
+ 
+    <div className={data.featured?('JobListing isFeatured'):'JobListing'} key={data.id}>
       <div className="jobListingContainer">
         <div className="topJL">
           <img src={process.env.PUBLIC_URL + data.logo} alt={data.company} />
@@ -46,19 +70,19 @@ function JobListing() {
         </div>
         <div className="bottonJL">
           <div className="bottonTags">
-            <div className="roleJL tags"><p>{data.role}</p></div>
-            <div className="levelJL tags"><p>{data.level}</p></div>
+            <div className="roleJL tags"><p onClick={()=>handleClick(data.role)}>{data.role}</p></div>
+            <div className="levelJL tags"><p onClick={()=>handleClick(data.level)}>{data.level}</p></div>
             
               {data.languages.map((language, index) => (
                 <div key={index} className="languageJL tags">
-                  <p>{language}</p>
+                  <p onClick={()=>handleClick(language)}>{language}</p>
                 </div>
               ))}
             
             
               {data.tools.map((tool, index) => (
                 <div key={index} className="toolJL tags">
-                  <p>{tool}</p>
+                  <p onClick={()=>handleClick(tool)}>{tool}</p>
                 </div>
               ))}
             
@@ -69,8 +93,8 @@ function JobListing() {
   ));
   return (
     <React.Fragment>
+       <SearchBar searchData={searchData} setSearchData={setSearchData} />
       {jobs}
-      <img src={datas[0].logo} alt="" />
     </React.Fragment>
   );
 }

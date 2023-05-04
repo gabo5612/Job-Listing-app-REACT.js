@@ -1,5 +1,49 @@
-.SearchBar{
-    width: 200px;
-    height: 500px;
-    background-color: aquamarine;
+.searchBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -30px 0 10px;
+}
+.leftSideSB{
+    width: 80dvh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.margin{
+    margin: 10px 15px 0px 15px;
+}
+.clearButton{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: var(--DesaturatedDarkCyan);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: bold;
+    padding: 0;
+    
+}
+.clearButton:hover, .clearButton:active{
+    border-bottom: 2px solid var(--DesaturatedDarkCyan);
+}
+.searchTags{
+    display: flex;
+    align-items: center;
+}
+.searchBar p{
+    margin-right: 0;
+    padding-bottom: 9px;
+    border-radius: 5px 0 0 5px;
+}
+.searchTags button{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--DesaturatedDarkCyan);
+    margin-bottom: 5px;
+    text-align: center;
+}
+.searchTags button:hover, .searchTags button:active{
+    background-color: var(--VeryDarkGrayishCyan);
 }

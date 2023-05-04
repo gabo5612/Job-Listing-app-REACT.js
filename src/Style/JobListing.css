@@ -1,15 +1,20 @@
 .JobListing{
     background-color: white;
     width: 90dvw;
-    margin: 20px 0 10px 0;
+    margin: 30px 0 10px 0;
     border-radius: 12px;
     display: flex;
-    flex-direction: column;
-    box-shadow: 0px 4px 7px 0px rgba(0,0,0,0.44);
+    box-shadow: 0px 4px 7px 0px hsla(180, 17%, 49%, 0.334);
+}
+.isFeatured{
+
+    border-left: 5px solid var(--DesaturatedDarkCyan);
+    margin-left: -5px;
 }
 .jobListingContainer{
     margin: 0 20px ;
 }
+
 .topJL img{
     width: 50px;
     margin-top: -25px;
