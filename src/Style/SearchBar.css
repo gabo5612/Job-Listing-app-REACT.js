@@ -5,7 +5,7 @@
     margin: -30px 0 10px;
 }
 .leftSideSB{
-    width: 80dvh;
+    
     display: flex;
     flex-wrap: wrap;
 }
@@ -15,14 +15,17 @@
 .clearButton{
     border: none;
     background-color: rgba(255, 255, 255, 0);
-    color: var(--DesaturatedDarkCyan);
+    color: var(--DarkGrayishCyan);
     font-family: 'League Spartan', sans-serif;
     font-weight: bold;
     padding: 0;
-    
+    font-size: 1.1rem;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .clearButton:hover, .clearButton:active{
     border-bottom: 2px solid var(--DesaturatedDarkCyan);
+    color: var(--DesaturatedDarkCyan);
 }
 .searchTags{
     display: flex;

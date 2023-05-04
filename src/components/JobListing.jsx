@@ -30,6 +30,7 @@ function JobListing() {
  
     <div className={data.featured?('JobListing isFeatured'):'JobListing'} key={data.id}>
       <div className="jobListingContainer">
+        <div className="leftSideDesktop">
         <div className="topJL">
           <img src={process.env.PUBLIC_URL + data.logo} alt={data.company} />
         </div>
@@ -67,6 +68,7 @@ function JobListing() {
               <p>{data.location}</p>
             </div>
           </div>
+        </div>
         </div>
         <div className="bottonJL">
           <div className="bottonTags">

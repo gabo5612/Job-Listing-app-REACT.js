@@ -69,7 +69,8 @@ body{
 .bottonApp{
   background-color: var(--LightGrayishCyan);
   width: 100dvw;
-  
+  min-height: 80dvh;
+  height: max-content;
   display: flex;
   flex-direction: column;
   
